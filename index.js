@@ -14,7 +14,7 @@ function sum(a, b) {
  */
 function reverseString(str) {
   return str.split("").reverse().join("");
-  // TODO: Implement this function .
+  // TODO: Implement this function
 }
 
 /**
