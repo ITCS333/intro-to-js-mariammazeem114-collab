@@ -4,7 +4,6 @@
  * @returns {number} The sum of a and b.
  */
 function sum(a, b) {
-  return a+b;
   // TODO: Implement this function.
 }
 
@@ -13,8 +12,7 @@ function sum(a, b) {
  * @returns {string} The reversed string.
  */
 function reverseString(str) {
-  return str.split("").reverse().join("");
-  // TODO: Implement this function .
+  // TODO: Implement this function.
 }
 
 /**
@@ -22,10 +20,6 @@ function reverseString(str) {
  * @returns {number} The largest number in the array. Return null if the array is empty.
  */
 function findLargest(numbers) {
-  if (numbers.length === 0) {
-    return null;
-  }
-  return Math.max.apply(null, numbers);
   // TODO: Implement this function.
 }
 
@@ -36,9 +30,6 @@ function findLargest(numbers) {
  * The check should be case-insensitive.
  */
 function isPalindrome(str) {
-   return numbers.filter(function(num) {
-    return num % 2 === 0;
-   });
   // TODO: Implement this function.
 }
 
@@ -47,9 +38,6 @@ function isPalindrome(str) {
  * @returns {number[]} A new array containing only the even numbers from the original array.
  */
 function filterEvenNumbers(numbers) {
-  return numbers.filter(function(num) {
-    return num % 2 === 0;
-  });
   // TODO: Implement this function.
 }
 
@@ -62,3 +50,4 @@ module.exports = {
   isPalindrome,
   filterEvenNumbers,
 };
+from w3schools
