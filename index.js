@@ -1,11 +1,4 @@
-/**
- * @param {number} a The first number.
- * @param {number} b The second number.
- * @returns {number} The sum of a and b.
- */
-function sum(a, b) {
-  return a + b;
-}
+
 /**
  * @param {number} a The first number.
  * @param {number} b The second number.
@@ -37,7 +30,7 @@ function findLargest(numbers) {
  * @returns {boolean} True if the string is a palindrome, false otherwise.
  */
 function isPalindrome(str) {
-  if (!str) return false; // لتجنب مشاكل القيم الفارغة
+  if (!str) return false; 
   const lowerStr = str.toLowerCase();
   const reversedStr = lowerStr.split('').reverse().join('');
   return lowerStr === reversedStr;
