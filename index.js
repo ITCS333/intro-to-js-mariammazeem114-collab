@@ -50,4 +50,3 @@ module.exports = {
   isPalindrome,
   filterEvenNumbers,
 };
-from w3schools
