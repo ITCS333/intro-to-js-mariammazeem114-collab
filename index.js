@@ -6,6 +6,14 @@
 function sum(a, b) {
   return a + b;
 }
+/**
+ * @param {number} a The first number.
+ * @param {number} b The second number.
+ * @returns {number} The sum of a and b.
+ */
+function sum(a, b) {
+  return a + b;
+}
 
 /**
  * @param {string} str The string to reverse.
@@ -20,7 +28,7 @@ function reverseString(str) {
  * @returns {number} The largest number in the array. Return null if the array is empty.
  */
 function findLargest(numbers) {
-  if (numbers.length === 0) return null;
+  if (!numbers || numbers.length === 0) return null;
   return Math.max(...numbers);
 }
 
@@ -29,6 +37,7 @@ function findLargest(numbers) {
  * @returns {boolean} True if the string is a palindrome, false otherwise.
  */
 function isPalindrome(str) {
+  if (!str) return false; // لتجنب مشاكل القيم الفارغة
   const lowerStr = str.toLowerCase();
   const reversedStr = lowerStr.split('').reverse().join('');
   return lowerStr === reversedStr;
@@ -39,6 +48,7 @@ function isPalindrome(str) {
  * @returns {number[]} A new array containing only the even numbers from the original array.
  */
 function filterEvenNumbers(numbers) {
+  if (!numbers || numbers.length === 0) return [];
   return numbers.filter(num => num % 2 === 0);
 }
 
