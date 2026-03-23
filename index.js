@@ -36,11 +36,12 @@ function findLargest(numbers) {
  * The check should be case-insensitive.
  */
 function isPalindrome(str) {
-   return numbers.filter(function(num) {
-    return num % 2 === 0;
-   });
-  // TODO: Implement this function.
+  const lowerStr = str.toLowerCase();
+  const reversedStr = lowerStr.split('').reverse().join('');
+  return lowerStr === reversedStr;
 }
+  // TODO: Implement this function.
+  
 
 /**
  * @param {number[]} numbers An array of numbers.
