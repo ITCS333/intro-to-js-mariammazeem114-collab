@@ -4,8 +4,7 @@
  * @returns {number} The sum of a and b.
  */
 function sum(a, b) {
-  return a+b;
-  // TODO: Implement this function.
+  return a + b;
 }
 
 /**
@@ -14,7 +13,6 @@ function sum(a, b) {
  */
 function reverseString(str) {
   return str.split("").reverse().join("");
-  // TODO: Implement this function
 }
 
 /**
@@ -22,38 +20,27 @@ function reverseString(str) {
  * @returns {number} The largest number in the array. Return null if the array is empty.
  */
 function findLargest(numbers) {
-  if (numbers.length === 0) {
-    return null;
-  }
-  return Math.max.apply(null, numbers);
-  // TODO: Implement this function.
+  if (numbers.length === 0) return null;
+  return Math.max(...numbers);
 }
 
 /**
  * @param {string} str The string to check.
  * @returns {boolean} True if the string is a palindrome, false otherwise.
- * A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or racecar.
- * The check should be case-insensitive.
  */
 function isPalindrome(str) {
   const lowerStr = str.toLowerCase();
   const reversedStr = lowerStr.split('').reverse().join('');
   return lowerStr === reversedStr;
 }
-  // TODO: Implement this function.
-  
 
 /**
  * @param {number[]} numbers An array of numbers.
  * @returns {number[]} A new array containing only the even numbers from the original array.
  */
 function filterEvenNumbers(numbers) {
-  return numbers.filter(function(num) {
-    return num % 2 === 0;
-  });
-  // TODO: Implement this function.
+  return numbers.filter(num => num % 2 === 0);
 }
-
 
 // Do not edit the line below.
 module.exports = {
