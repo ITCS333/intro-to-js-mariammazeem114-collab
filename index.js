@@ -29,7 +29,7 @@ function findLargest(numbers) {
  * @param {string} str The string to check.
  * @returns {boolean} True if the string is a palindrome, false otherwise.
  */
-function isPalindrome(str) {
+function ispalindrome(str) {
     if (!str) return false; 
   const lowerStr = str.toLowerCase();
   const reversedStr = lowerStr.split('').reverse().join('');
