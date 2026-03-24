@@ -30,7 +30,7 @@ function findLargest(numbers) {
  * @returns {boolean} True if the string is a palindrome, false otherwise.
  */
 function isPalindrome(str) {
-  if (!str) return false; 
+    if (!str) return false; 
   const lowerStr = str.toLowerCase();
   const reversedStr = lowerStr.split('').reverse().join('');
   return lowerStr === reversedStr;
