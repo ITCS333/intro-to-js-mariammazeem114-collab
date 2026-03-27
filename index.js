@@ -1,48 +1,28 @@
 
-/**
- * @param {number} a The first number.
- * @param {number} b The second number.
- * @returns {number} The sum of a and b.
- */
+
 function sum(a, b) {
   return a + b;
 }
 
-/**
- * @param {string} str The string to reverse.
- * @returns {string} The reversed string.
- */
+
 function reverseString(str) {
-  return str.split("").reverse().join("");
+  return str.split('').reverse().join('');
 }
 
-/**
- * @param {number[]} numbers An array of numbers.
- * @returns {number} The largest number in the array. Return null if the array is empty.
- */
+
 function findLargest(numbers) {
-  if (!numbers || numbers.length === 0) return null;
+  if (numbers.length === 0) return null;
   return Math.max(...numbers);
 }
 
-/**
- * @param {string} str The string to check.
- * @returns {boolean} True if the string is a palindrome, false otherwise.
- */
-function ispalindrome(str) {
-    if (!str) return false; 
-  const lowerStr = str.toLowerCase();
-  const reversedStr = lowerStr.split('').reverse().join('');
-  return lowerStr === reversedStr;
+function isPalindrome(str) {
+  const lower = str.toLowerCase();
+  return lower === lower.split('').reverse().join('');
 }
 
-/**
- * @param {number[]} numbers An array of numbers.
- * @returns {number[]} A new array containing only the even numbers from the original array.
- */
+
 function filterEvenNumbers(numbers) {
-  if (!numbers || numbers.length === 0) return [];
-  return numbers.filter(num => num % 2 === 0);
+  return numbers.filter(n => n % 2 === 0);
 }
 
 // Do not edit the line below.
