@@ -6,7 +6,7 @@ function sum(a, b) {
 
 
 function reverseString(str) {
-  return str.split('').reverse().join('');
+  return str.split(").reverse().join(");
 }
 
 
@@ -18,7 +18,7 @@ function findLargest(numbers) {
 function isPalindrome(str) {
   const lower = str.toLowerCase();
   return lower === 
-  lower.split('').reverse().join('');
+  lower.split(").reverse().join(");
 }
 
 
